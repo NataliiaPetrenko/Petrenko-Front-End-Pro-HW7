@@ -19,6 +19,9 @@ let userCity = prompt("Let's clarify where are you living now?", "Kyiv");
 let userCountry;
 
 switch (userCity) {
+    case null:
+        userCountry = "Sorry, but you didn't specify where are you living now."
+        break;
     case "Kyiv":
         userCountry = "You're living in Ukraine";
         break;
